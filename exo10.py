@@ -1,8 +1,8 @@
 def comparaison():
 
-        A = int(input(" Entrer les valeurs à comparer\n"))
-        B = int(input(" Entrer les valeurs à comparer\n"))
-        C = int(input(" Entrer les valeurs à comparer\n"))
+        A = int(input(" Entrer une valeur\n"))
+        B = int(input(" Entrer une valeur \n"))
+        C = int(input(" Entrer une valeur \n"))
 
         if (A > B and B > C) :
             print("dans l’ordre on a " + str(A) + " ; " +str(B) + "\" et " + str(C));

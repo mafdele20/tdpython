@@ -1,9 +1,10 @@
 
 def decomposition():
-
-     montant =  int(input("saisir un montant"))
+    montant = - 1
+    while montant <= 0:
+     montant =  int(input("saisir un montant\n"))
      if montant < 0:
-      print("error")
+         print("erreur montant doit etre positif\n")
      else:
             billet20 = (montant // 20)
             rest = (montant % 20)
@@ -15,8 +16,8 @@ def decomposition():
             piece1 = (rest % 2)
 
             print(str(montant) + " est composé de " +str(billet20) + " billet de 20 ,"
-            +str(billet10)+ " billet de 10 ," +str(billet5) + "billet de 5 ,"
-            +str(piece2)+ "pieces de 2 et "+str(piece1) + " piece de 1 ,")
+            +str(billet10)+ " billet de 10 ," +str(billet5) + " billet de 5 ,"
+            +str(piece2)+ " pieces de 2 et "+str(piece1) + " piece de 1 ,")
 
 
 if __name__ == '__main__':

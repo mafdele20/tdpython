@@ -2,8 +2,9 @@ def operation():
     a = int(input("saisir le premier nombre"))
 
     b = int(input("saisir le deuxième nombre"))
-
-    operateur = input("Choisissez votre oprerateur: ")
+    operateur = ""
+    while operateur == "":
+     operateur = input("Choisissez votre oprerateur: ")
     if operateur not in ["+","-","/","*"]:
             print("Choix incorrect !")
 

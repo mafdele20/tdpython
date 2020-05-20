@@ -1,7 +1,13 @@
 def resistance():
-    R1 = float (input("  entre la resistance R1 \n"))
-    R2= float (input("  entre la resistance R2 \n"))
-    R3 = float (input("  entre la resistance R3D\n"))
+    R1= -1
+    R2 = -1
+    R3= -1
+    while R1 <= 0:
+     R1 = float (input("  entre la resistance R1 \n"))
+    while R2 <= 0:
+      R2= float (input("  entre la resistance R2 \n"))
+    while R3<= 0:
+      R3 = float (input("  entre la resistance R3 \n"))
 
 
     rserie = (R1 + R2 + R3)
@@ -13,15 +19,20 @@ def resistance():
 #version2
 def resistance2():
 
-    R1 = float(input("entre la resistance R1\n"))
-
-    R2 = float(input("entre la resistance R1\n"))
-
-    R3 = float(input("entre la resistance R1\n"))
+    R1 = -1
+    R2 = -1
+    R3 = -1
+    while R1 <= 0:
+        R1 = float(input("  entre la resistance R1 \n"))
+    while R2 <= 0:
+        R2 = float(input("  entre la resistance R2 \n"))
+    while R3 <= 0:
+        R3 = float(input("  entre la resistance R3 \n"))
 
     rserie = R1 + R2 + R3;
 
     rpara = (R1 * R2 * R3) / (R1 * R2 + R2 * R3 + R1 * R3);
+
     # python 2.x
     print("1--resistance en serie")
     print ("2--resistance en parallele")
